@@ -5,6 +5,7 @@ dotenv.config();
 options = {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
+	dbName: "mws"
 }
 
 mongoose.connect(process.env.MONGODB_URI, options)

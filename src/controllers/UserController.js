@@ -108,19 +108,11 @@ async function update(req, res) {
 
 async function destroy(req, res) {
 	try {
-		User.findByIdAndDelete(req.params.id, (err, user) => {
-			if(err) {
-				return res.status(500).json({
-					success: false,
-					message: err.message
-				})
-			}
-			
-			return res.json({
-				success: true,
-				message: "User deleted successfully",
-				data: user
-			})
+		const data = await User.findByIdAndDelete(req.params.id)
+		return res.json({
+			success: true,
+			message: "User deleted successfully",
+			data: data
 		})
 
 	} catch (err) {
