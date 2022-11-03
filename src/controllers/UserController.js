@@ -2,7 +2,7 @@
 
 require('../config/database')
 const User = require('../models/User')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 
 async function show(req, res) {
 	try {
