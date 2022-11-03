@@ -4,12 +4,11 @@ const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 
 dotenv.config()
-options = {
+const options = {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 	dbName: "mws"
 }
-
 mongoose.connect(process.env.MONGODB_URI, options)
 const db = mongoose.connection
 
