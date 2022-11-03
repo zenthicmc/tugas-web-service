@@ -9,6 +9,7 @@ const options = {
 	useUnifiedTopology: true,
 	dbName: "mws"
 }
+
 mongoose.connect(process.env.MONGODB_URI, options)
 const db = mongoose.connection
 
