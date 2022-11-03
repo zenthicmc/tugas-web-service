@@ -1,7 +1,9 @@
+"use strict"
+
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 
-dotenv.config();
+dotenv.config()
 options = {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,

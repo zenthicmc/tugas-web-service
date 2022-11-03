@@ -1,3 +1,5 @@
+"use strict"
+
 require('../config/database')
 const User = require('../models/User')
 const bcrypt = require('bcrypt')
