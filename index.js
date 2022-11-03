@@ -22,10 +22,6 @@ app.use(cors({
    allowedHeaders: "Content-Type, Authorization, X-Requested-With, Accept"
 }))
 
-app.use("/", (req, res) => {
-   res.send("Aplikasi Rest API")
-})
-
 // apiRoutes
 app.use("/api/", apiRoutes)
 
