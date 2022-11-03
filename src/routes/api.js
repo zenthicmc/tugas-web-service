@@ -2,7 +2,7 @@
 
 const express = require('express')
 const router = express.Router()
-const userController = require('../controllers/userController')
+const userController = require('../../src/controllers/UserController')
 
 router.get('/user', userController.show)
 router.get('/user/:id', userController.detail)
